@@ -33,7 +33,7 @@
 
 2. **Скачайте скрипт установки**:
    ```bash
-   curl -O https://raw.githubusercontent.com/your_username/your_repo/main/setup.sh
+   curl -O https://github.com/Samtagil/Anonchatbot/main/setup.sh
    chmod +x setup.sh
    ```
 
