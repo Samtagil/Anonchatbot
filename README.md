@@ -39,7 +39,7 @@
 
 3. **Запустите скрипт установки**:
    ```bash
-   sudo bash setup.sh git@github.com:your_username/your_repo.git your_bot_token your_encryption_key
+   sudo bash setup.sh git@github.com/Samtagil/Anonchatbot/main/setup.sh
    ```
    Замените:
    - `git@github.com:your_username/your_repo.git` на URL вашего репозитория.
