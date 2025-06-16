@@ -32,7 +32,7 @@
 - Git, curl
 - Telegram-токен от [@BotFather](https://t.me/BotFather)
 - Ключ шифрования (генерируется через `cryptography`)
-- Доступ к приватному репозиторию (SSH-ключ или токен GitHub)
+- Доступ к приватному репозиторию (SSH-ключ)
 - VPS с Linux (рекомендуется Ubuntu 22.04/24.04 LTS)
 
 ## 🔒 Доступ к репозиторию
@@ -48,7 +48,6 @@
    ```bash
    ssh -T git@github.com
    ```
-4. Альтернатива: используйте токен GitHub (Settings > Developer settings > Personal access tokens).
 
 ## 🚀 Установка
 Подробные инструкции в [`INSTALL.md`](./INSTALL.md). Кратко:
@@ -63,10 +62,6 @@
    curl -O https://raw.githubusercontent.com/Samtagil/Anonchatbot/main/setup.sh
    chmod +x setup.sh
    ```
-   Для приватного репозитория используйте токен:
-   ```bash
-   curl -H "Authorization: token your_token" -O https://raw.githubusercontent.com/Samtagil/Anonchatbot/main/setup.sh
-   ```
 
 3. Получите токен и ключ:
    - Токен: через @BotFather (`/newbot`).
@@ -75,7 +70,7 @@
      python3 -c "from cryptography.fernet import Fernet; print(Fernet.generate_key().decode())"
      ```
 
-4. Запустите установку:
+4. Запустите установку, указав данные:
    ```bash
    sudo bash setup.sh git@github.com:Samtagil/Anonchatbot.git your_bot_token your_encryption_key
    ```
