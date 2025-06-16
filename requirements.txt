@@ -1,0 +1,11 @@
+# requirements.txt для Telegram чат-бота
+# Список зависимостей для работы бота
+
+python-telegram-bot[callback-data]>=21.0  # API Telegram с поддержкой callback-кнопок
+aiosqlite>=0.20.0                        # Асинхронная работа с SQLite
+structlog>=24.4.0                        # Структурированное логирование
+cachetools>=5.5.0                        # Кэширование данных
+cryptography>=43.0.1                     # Шифрование логов
+python-dotenv>=1.0.1                     # Загрузка переменных из .env
+aiolimiter>=1.1.0                        # Ограничение частоты команд
+bleach>=6.1.0                            # Очистка пользовательского ввода
